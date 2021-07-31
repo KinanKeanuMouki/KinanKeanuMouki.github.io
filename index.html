@@ -1,43 +1,136 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My new webpage</title>
         <meta charset="utf-8">
+        <title>Spin-off of "Project: Event invite"</title>
         <style>
             body {
-                font-family: Arial, Helvetica, sans-serif;
-                background-color: #bd2604;
+                background-color: rgb(199, 199, 199);
+                font-family: sans-serif;
             }
-            hr {
-                border-color: ##FFFFFF;
-                border-width: 4px;
+            
+            h1 {
+                text-align: center;
             }
-            .content-links {
-                color: purple
-            }
-            a {
-                text-decoration-color: royalblue;
-                text-decoration-line: none;
+            
+            h2 {
+                text-align: center;
             }
 
+            hr {
+                border-width: 2.5px;
+                border-color: black;
+                background-color: black;
+            }
+            
+            p {
+                line-height: 19px;
+            }
+            #invited-people {
+                float: left;
+                width: 25%;
+                margin-right: 20px;
+                border: 5px solid rgb(0, 0, 0);
+                background-color: rgb(214, 34, 70);
+                font-weight: bold;
+            }
+            
+            #party-details {
+                position: relative;
+                left: 15px;
+            }
+            #invitation-words {
+                margin-bottom: 67px;
+            }
+            #invitation-list {
+                margin-left: 7px;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            #menu-info {
+                overflow: visible;
+                width: 60%;
+                border-right: black solid 5px;
+                padding-right: 10px;
+                border-bottom: black dashed;
+                padding-bottom: 10px;
+            }
+            #meal-list {
+                float: right;
+                position: relative;
+                border: black solid 5px;
+                height: 133px;
+                padding-left: 5px;
+                width: 30%;
+                padding-top: 1.5 ;
+                background-color: rgb(214, 34, 70);
+                font-weight: bold;
+            }
+            .casual-info {
+                line-height: 20px;
+            }
+            #closing-sentence {
+                font-style: italic;
+                color: rgb(250, 5, 5);
+                font-weight: bold;
+            }
         </style>
     </head>
     <body>
-        <h1>Kinan's Website</h1>
-        <h2>Contents:</h2>
+        
+        <h1>You're invited!</h1>
+        <h2>To Kinan's birthday!</h2>
+        <div id="invited-people">
+        <p id="invitation-list"> The list of invited people:</p>
+        <ol>
+            <li>Luiza</li>
+            <li>Islam</li>
+            <li>Valera</li>
+            <li>Aslan</li>
+        </ol>
+        </div>
+        <div id="party-details">
+        <p class="casual-info">The details:</p>
         <ul>
-            <li><a href="#about-me" class="content-links">About me</a></li>
-            <li><a href="#future-plans" class="content-links">Future plans</a></li>
-            <li><a href=#my-daily-routine" class="content-links">My daily routine</a></li>
+            <li>Meet up at a <a href="#location-details">beautiful place</a></li>
+            <li><a href="#menu-items">Eat</a></li>
+            <li><a href="#party-plan">Do fun stuff</a></li>
+        </ul>
+        </div>
+        <p id="invitation-words">You <em>must</em> be ready to have fun!</p>
+        <hr>
+        <h2 id="location-details">Location details</h2>
+        <p class="casual-info">The Mezdah restaurant is one of the most <strong>classic</strong> and <strong>classy</strong> restaurants in the republic of Adygea<br>
+        Some of the pros of this restaurants:
+        </p>
+        <ul>
+            <li>Delicious food</li>
+            <li>Calm atmosphere</li>
+            <li>High-tier customer service</li>
         </ul>
         <hr>
-        <h2 id="about-me">About me</h2>
-        <h3>My chilhood</h3>
-        <p>some info about my childhood</p>
-        <h3>Teenagehood</h3>
-        <p>Some info about my teenagehood</p>
+        <h2 id="menu-items">Menu items</h2>
+        <div id="meal-list">
+            <p>List of meals:</p>
+            <ol>
+                <li>Ships</li>
+                <li>Paste</li>
+                <li>Cesear salad</li>
+            </ol>
+        </div>
+        <div id="menu-info">
+        <p class="casual-info">There is going to be food for everyone at my birthday - vegans, hardcore meat eaters and vegetarians are going to have many options for the consumption of their meals</P>
+        
+        </div>
+        
+        <p class="casual-info">P.S. If you decide you don't wish to eat - please inform beforehand</p>
         <hr>
-        <h2 id="future-plans">Future plans</h2>
-        <p>Some info about my future plans</p>
+        <h2 id="party-plan">Party plan</h2>
+        <p class="casual-info"> Guests are expected to arrive at 17:30.<br>After all guests have arrived, we begin to dine together.<br>After we finish dinner, we have the dance party.<br>
+        <span id="closing-sentence">Looking forward to seeing everybody!</span>
+        </p>
+        
     </body>
 </html>
